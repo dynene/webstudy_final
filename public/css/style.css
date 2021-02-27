@@ -1,0 +1,122 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #ff807e;
+    margin: 0px;
+    padding: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px dashed #ff807e;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid #ff807e;
+    padding: 5px;
+    height: 50px;
+}
+
+img {
+    margin: 1rem;
+}
+
+/* class */
+
+.text_l {
+    text-align: center;
+    font-size: large;
+}
+
+.text_s {
+    font-size: small;
+    text-align: center;
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+
+.text_ct {
+    text-align: center;
+}
+
+.Field1 {
+    width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px dashed #ff807e;
+}
+
+.text_Field1 {
+    font-size: small;
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 0.3rem;
+}
+
+.Field2 {
+    width: 270px;
+    display: block;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.Field_right {
+    float: right;
+    margin-right: 1rem;
+}
+
+.Field_left {
+    float: left;
+    margin-left: 1rem;
+}
+
+.btn_login {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#grid ol {
+    border-right: 2px dashed #ff807e;
+    width: 150px;
+    margin: 0px;
+    padding: 20px;
+    padding-left: 33px;
+    padding-bottom: 2rem;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+#article {
+    padding-left: 25px;
+}
+
+@media(max-width: 800px) {
+   #grid {
+       display: block;
+   }
+   #grid ol {
+        width: 100%;
+        border-right: none;
+        border-bottom: 2px dashed #ff807e;
+   }
+   img {
+       width: 90%;
+   }
+   iframe {
+       width: 90%;
+   }
+}

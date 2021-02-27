@@ -1,0 +1,141 @@
+<head>
+    <title>DYNE's webpage</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<h1>
+    Welcome, <%= user.name %>!
+</h1>
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+
+<input class="Field_left" type="button" value="night" onclick="
+if(this.value == 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+}
+else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+}">
+
+<br>
+<hr>
+
+<div id="grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="/login/login.html">Login page (not activated)</a></li>
+        <li><a href="cloneCoding/netflix.html">Netflix clone coding</a></li>
+        <li><a href="timetable.html">2021-1 time table</a></li>
+    </ol>
+
+    <div id="article">
+        <table class="text_s">
+            <tr>
+                <td></td>
+                <td>MON</td>
+                <td>TUE</td>
+                <td>WED</td>
+                <td>THU</td>
+                <td>FRI</td>
+            </tr>
+            <tr>
+                <td>1교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2교시</td>
+                <td></td>
+                <td>컴퓨터구조<br>권건우</td>
+                <td>컴퓨터구조<br>권건우</td>
+                <td>컴퓨터구조<br>권건우</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3교시</td>
+                <td>컴퓨터네트워크<br>심영철</td>
+                <td></td>
+                <td>컴퓨터네트워크<br>심영철</td>
+                <td>컴퓨터네트워크<br>심영철</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5교시</td>
+                <td>미술의이해<br>김은지</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>프로그래밍언어론<br>송하윤</td>
+            </tr>
+            <tr>
+                <td>6교시</td>
+                <td>미술의이해<br>김은지</td>
+                <td>프로그래밍언어론<br>송하윤</td>
+                <td></td>
+                <td>사회학의이해<br>왕혜숙</td>
+                <td>프로그래밍언어론<br>송하윤</td>
+            </tr>
+            <tr>
+                <td>7교시</td>
+                <td>미술의이해<br>김은지</td>
+                <td></td>
+                <td></td>
+                <td>사회학의이해<br>왕혜숙</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8교시</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>사회학의이해<br>왕혜숙</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9교시</td>
+                <td>알고리즘분석<br>정균락</td>
+                <td>알고리즘분석<br>정균락</td>
+                <td>알고리즘분석<br>정균락</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+<button type="button" class="Field_left" onclick="location.href='http://localhost:3000/dashboard'">이전 페이지로</button>
+
+<br>
+<hr>

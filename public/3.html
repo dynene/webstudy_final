@@ -1,0 +1,65 @@
+<head>
+    <title>DYNE's webpage</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<h1>
+    Welcome, <%= user.name %>!
+</h1>
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+
+<input class="Field_left" type="button" value="night" onclick="
+if(this.value == 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+}
+else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+}">
+
+<br>
+<hr>
+
+<div id="grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="/login/login.html">Login page (not activated)</a></li>
+        <li><a href="cloneCoding/netflix.html">Netflix clone coding</a></li>
+        <li><a href="timetable.html">2021-1 time table</a></li>
+    </ol>
+
+    <div id="article">
+        <h2>JavaScript이란 무엇인가?</h2>
+
+        <p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript" target="_blank"
+                title="javascript specification">JavaScript(JS)</a>는 가벼운 인터프리터 또는 JIT 컴파일 프로그래밍 언어로, 일급 함수를 지원합니다. 웹
+            페이지의 스크립트 언어로서 제일 유명하지만 Node.js, Apache CouchDB, Adobe Acrobat처럼 많은 비 브라우저 환경에서도 사용하고 있습니다. JavaScript는
+            프로토타입 기반의 동적 다중 패러다임 스크립트 언어로, 객체지향형, 명령형, 선언형(함수형 프로그래밍 등) 스타일을 지원합니다.</p>
+    </div>
+</div>
+
+
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+<button type="button" class="Field_left" onclick="location.href='http://localhost:3000/dashboard'">이전 페이지로</button>
+
+<br>
+<hr>

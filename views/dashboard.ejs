@@ -1,0 +1,89 @@
+<h1>
+    Welcome, <%= user.name %>!
+</h1>
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+<input class="Field_left" type="button" value="night" onclick="
+if(this.value == 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+}
+else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+}">
+
+<br>
+<hr>
+
+<div id="grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="/login/login.html">Login page (not activated)</a></li>
+        <li><a href="cloneCoding/netflix.html">Netflix clone coding</a></li>
+        <li><a href="timetable.html">2021-1 time table</a></li>
+    </ol>
+
+    <div id="article">
+        <iframe width="640" height="360"
+            src="https://www.youtube.com/embed/NjHYwrVktyM?amp;autoplay=1&amp;playlist=NjHYwrVktyM&amp;loop=1"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+        <ul>
+            <li>first</li>
+            <li>second</li>
+            <li>third</li>
+        </ul>
+
+        <hr>
+
+        <h2>WEB이란 무엇인가?</h2>
+
+        <a href="https://www.w3.org/TR/html5/" target="_blank" title="HTML5 specification">Hypertext Markup Language
+            (html)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong> and web
+        applications. Web browsers receive HTML documents from a web server or from local storage and render them
+        into multimedia web pages. HTML describes the structure of a web page semantically and originally included
+        cues for the appearance of the document.<br><br>HTML elements are the building blocks of HTML pages. With
+        HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered
+        page. It provides a menas to create structured documents by denoting strucctural semantics for text such as
+        headings, paragraphs, lists, links, quites and other items. HTML elements are delineated by tags, written
+        using angle brackets.
+
+        <p><u>Hypertext Markup Language (html)</u> is the standard markup language for <strong>creating web
+                pages</strong> and web applications. Web browsers receive HTML documents from a web server or from
+            local storage and render them into multimedia web pages. HTML describes the structure of a web page
+            semantically and originally included cues for the appearance of the document.</p>
+        <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such
+            as interactive forms, may be embedded into the rendered page. It provides a menas to create structured
+            documents by denoting strucctural semantics for text such as headings, paragraphs, lists, links, quites
+            and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+
+        <hr>
+
+        <img src="haul.jpg" width="60%">
+
+        <p><a href="https://youtu.be/NjHYwrVktyM" target="_blank" title="유튜브로 연결됩니다">폴킴, 십센치 - 여름 안에서</a></p>
+    </div>
+</div>
+
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+<br>
+<hr>

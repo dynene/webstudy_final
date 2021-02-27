@@ -1,0 +1,63 @@
+<head>
+    <title>DYNE's webpage</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<h1>
+    Welcome, <%= user.name %>!
+</h1>
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+
+<input class="Field_left" type="button" value="night" onclick="
+if(this.value == 'night') {
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+    this.value = 'day';
+}
+else {
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+    this.value = 'night';
+}">
+
+<br>
+<hr>
+
+<div id="grid">
+    <ol>
+        <li><a href="1.html">HTML</a></li>
+        <li><a href="2.html">CSS</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+        <li><a href="/login/login.html">Login page (not activated)</a></li>
+        <li><a href="cloneCoding/netflix.html">Netflix clone coding</a></li>
+        <li><a href="timetable.html">2021-1 time table</a></li>
+    </ol>
+
+    <div id="article">
+        <h2>CSS이란 무엇인가?</h2>
+
+        <p><a href="https://developer.mozilla.org/ko/docs/Web/CSS" target="_blank" title="CSS specification">Cascading
+                Style Sheets(CSS)</a>는 HTML이나 XML(SVG, XHTML 같은 XML 방언(dialect)
+            포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 스타일시트 언어입니다. CSS는 요소가 화면, 종이, 음성이나 다른 매체 상에 어떻게 렌더링되어야 하는지 기술합니다.</p>
+    </div>
+</div>
+
+<hr>
+<div class="Field_right">
+    <div class="text_s">
+        <%= user.name %> 님 환영합니다.
+    </div>
+    <button type="button" onclick="location.href='/users/logout'">로그아웃</button>
+</div>
+
+<button type="button" class="Field_left" onclick="location.href='http://localhost:3000/dashboard'">이전 페이지로</button>
+
+<br>
+<hr>

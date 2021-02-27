@@ -1,0 +1,26 @@
+<h1> Login </h1>
+<hr>
+<p class="text_l">로그인하여 페이지의 내용을 확인하세요.</p>
+
+<%- include ('./partials/messages') %>
+
+    <form action="/users/login" method="POST" class="Field1">
+        <div>
+            <label for="email" class="text_Field1">Email</label>
+            <input type="email" name="email" placeholder="이메일 주소 입력" />
+        </div>
+        <div>
+            <label for="password" class="text_Field1">Password</label>
+            <input type="password" name="password" placeholder="비밀번호 입력" />
+
+        </div>
+        <button type="submit" class="btn_login btn btn-primary btn-block">로그인</button>
+
+    </form>
+
+    <div class="Field2">
+        <div class="text_s">이 페이지에 처음 방문하셨나요?</div>
+        <button type="button" onclick="location.href='/users/register'">회원가입</button>
+    </div>
+
+    <button type="button" class="btn_login" onclick="location.href='http://localhost:3000'">처음 페이지로</button>
